@@ -58,6 +58,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,9 +84,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5811970893536397571
 GameObject:
@@ -95,6 +102,7 @@ GameObject:
   - component: {fileID: 6658903472718292055}
   - component: {fileID: 6658903472718292054}
   - component: {fileID: 9094225196428312524}
+  - component: {fileID: 8601802773709669651}
   m_Layer: 0
   m_Name: Arch
   m_TagString: Untagged
@@ -127,10 +135,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5811970893536397571}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -267,6 +275,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
+  m_UnparentTransformOnGrab: 1
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
@@ -291,6 +300,7 @@ MonoBehaviour:
   m_ObjectPlaneTranslationMode: 2
   m_EnablePlaneClassificationFilter: 0
   m_PlaneClassificationsList: 
+  m_PlaneClassifications: 0
   m_UseInteractorOrientation: 0
   m_MinScale: 0.25
   m_MaxScale: 2
@@ -298,6 +308,20 @@ MonoBehaviour:
   m_Elasticity: 0.15
   m_EnableElasticBreakLimit: 1
   m_ElasticBreakLimit: 0.5
+--- !u!114 &8601802773709669651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5811970893536397571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cbab579acee544e9e5303f61c55334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectInformation
+  objectName: Arch
+  objectDescription: This is an Arch.
 --- !u!1 &7626240431663080128
 GameObject:
   m_ObjectHideFlags: 0

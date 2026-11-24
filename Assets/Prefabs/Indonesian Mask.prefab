@@ -141,6 +141,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 429adaf1a35e2fc4d8d7a8f7502052ca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2646606678345047775}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 429adaf1a35e2fc4d8d7a8f7502052ca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -1357895620676576576}
   m_SourcePrefab: {fileID: 100100000, guid: 429adaf1a35e2fc4d8d7a8f7502052ca, type: 3}
 --- !u!1 &2623656383912984205 stripped
 GameObject:
@@ -327,6 +330,20 @@ MonoBehaviour:
   m_Elasticity: 0.15
   m_EnableElasticBreakLimit: 1
   m_ElasticBreakLimit: 0.5
+--- !u!114 &-1357895620676576576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623656383912984205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cbab579acee544e9e5303f61c55334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectInformation
+  objectName: Indonesian Mask
+  objectDescription: This is the Indonesian Mask.
 --- !u!4 &2833605338113824111 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1151388028547126963, guid: 429adaf1a35e2fc4d8d7a8f7502052ca, type: 3}

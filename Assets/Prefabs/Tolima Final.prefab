@@ -141,6 +141,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b6aeaa149b9dfcb4492af8111e4018fe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3269798891087113531}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b6aeaa149b9dfcb4492af8111e4018fe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6684070174946749491}
   m_SourcePrefab: {fileID: 100100000, guid: b6aeaa149b9dfcb4492af8111e4018fe, type: 3}
 --- !u!1 &6047883064755511524 stripped
 GameObject:
@@ -327,6 +330,20 @@ MonoBehaviour:
   m_Elasticity: 0.15
   m_EnableElasticBreakLimit: 1
   m_ElasticBreakLimit: 0.5
+--- !u!114 &6684070174946749491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047883064755511524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cbab579acee544e9e5303f61c55334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectInformation
+  objectName: Tolima
+  objectDescription: This is the Tolima.
 --- !u!4 &6387710890823268958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b6aeaa149b9dfcb4492af8111e4018fe, type: 3}
