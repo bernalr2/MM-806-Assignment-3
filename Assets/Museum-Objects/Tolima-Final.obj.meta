@@ -3,7 +3,12 @@ guid: b6aeaa149b9dfcb4492af8111e4018fe
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tolima-Final
+    second: {fileID: 2100000, guid: cabbffa137a2cbe4ea255a8c00955271, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -57,9 +62,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    generateMeshLods: 0
+    generateMeshLods: 1
     meshLodGenerationFlags: 0
-    maximumMeshLod: -1
+    maximumMeshLod: 4
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8

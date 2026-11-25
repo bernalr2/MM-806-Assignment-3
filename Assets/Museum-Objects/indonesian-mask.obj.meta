@@ -3,7 +3,12 @@ guid: 429adaf1a35e2fc4d8d7a8f7502052ca
 ModelImporter:
   serializedVersion: 24300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0
+    second: {fileID: 2100000, guid: fe7a8fe9b6f16a1458f4b7d708973579, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -57,9 +62,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
-    generateMeshLods: 0
+    generateMeshLods: 1
     meshLodGenerationFlags: 0
-    maximumMeshLod: -1
+    maximumMeshLod: 4
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
