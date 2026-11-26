@@ -9,6 +9,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
     /// </summary>
     public class ObjectSpawner : MonoBehaviour
     {
+        public bool bHasObjectSpawned = false;
+        
         [SerializeField]
         [Tooltip("The camera that objects will face when spawned. If not set, defaults to the main camera.")]
         Camera m_CameraToFace;
@@ -207,6 +209,11 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="objectSpawned"/>
         public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
+            if (bHasObjectSpawned)
+            {
+                return false;
+            }
+            
             if (m_OnlySpawnInView)
             {
                 var inViewMin = m_ViewportPeriphery;
@@ -235,7 +242,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
             if (m_ApplyRandomAngleAtSpawn)
             {
-                var randomRotation = Random.Range(-m_SpawnAngleRange, m_SpawnAngleRange);
+                //var randomRotation = Random.Range(-m_SpawnAngleRange, m_SpawnAngleRange);
+                var randomRotation = 180;
                 newObject.transform.Rotate(Vector3.up, randomRotation);
             }
 
@@ -247,6 +255,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             }
 
             objectSpawned?.Invoke(newObject);
+            bHasObjectSpawned = true;
             return true;
         }
 

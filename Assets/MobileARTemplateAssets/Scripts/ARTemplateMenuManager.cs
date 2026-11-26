@@ -295,7 +295,7 @@ namespace UnityEngine.XR.Templates.AR
                 }
                 else
                 {
-                    m_DeleteButton.gameObject.SetActive(m_InteractionGroup?.focusInteractable != null);
+                    m_DeleteButton.gameObject.SetActive(true);
                 }
 
                 m_IsPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(-1);
@@ -304,7 +304,7 @@ namespace UnityEngine.XR.Templates.AR
             {
                 m_IsPointerOverUI = false;
                 m_CreateButton.gameObject.SetActive(true);
-                m_DeleteButton.gameObject.SetActive(m_InteractionGroup?.focusInteractable != null);
+                m_DeleteButton.gameObject.SetActive(true);
             }
 
             if (!m_IsPointerOverUI && m_ShowOptionsModal)
@@ -418,6 +418,7 @@ namespace UnityEngine.XR.Templates.AR
             {
                 Destroy(child.gameObject);
             }
+            m_ObjectSpawner.bHasObjectSpawned = false;
         }
 
         /// <summary>
@@ -451,11 +452,12 @@ namespace UnityEngine.XR.Templates.AR
 
         void DeleteFocusedObject()
         {
-            var currentFocusedObject = m_InteractionGroup.focusInteractable;
+            ClearAllObjects();
+            /*var currentFocusedObject = m_InteractionGroup.focusInteractable;
             if (currentFocusedObject != null)
             {
                 Destroy(currentFocusedObject.transform.gameObject);
-            }
+            }*/
         }
 
         void InitializeDebugMenuOffsets()
